@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/table%20assignment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+    <table border="3">
+         <tbody><tr>
+            <th colspan="4"> <strong> Invoice # 123456789</strong> </th>
+            <th colspan="3"> <strong>18 January 2022
+         </strong></th></tr> 
+
+          <tr>
+             <td colspan="3"> <strong>Pay To: </strong> <br> Acme Billing Co. <br> 123 Main St. Cityville, NA12345</td>
+              <td colspan="5"> <strong>Customer:</strong> <br> John Smith <br> 321 willow Way <br> Southeast Northwester Shire, MA54321 </td>
+             </tr>
+           
+             <tr>
+                <th>Name/Description</th>
+                <th colspan="2">Qty</th>
+                <th>@</th>
+                <th>Cost</th>
+                </tr>
+
+                 <tr>
+                    <td>Paperclip</td>
+                    <td colspan="2">1000</td>
+                    <td>0.01</td>
+                    <td>10.00</td>
+                 </tr>
+
+                 <tr>
+                    <td> Steples (Box)</td>
+                    <td colspan="2">100</td>
+                    <td>1.00</td>
+                    <td>100.00</td>
+                 </tr>
+
+                 <tr>
+                    <th colspan="4">Subtotal</th>
+                    <td>110.00</td>
+                 </tr>
+
+                 <tr>
+                    <th colspan="2"> Tax</th>
+                    <td colspan="2"> 8%</td>
+                    <td colspan="2">8.80</td>
+                
+                 </tr>
+
+                 <tr>
+                    <th colspan="4">Grand Total</th>
+                    <td>Rs. 118.80</td>
+                 </tr>
+                      
+                
+                
+        
+             
+
+
+    </tbody></table>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
